@@ -745,4 +745,4 @@ Distributed under the **MIT License** — see [`LICENSE`](LICENSE) for full term
   <a href="https://github.com/your-username/signconnect/stargazers"><img src="https://img.shields.io/badge/⭐_Star_this_repo-6366F1?style=flat-square"/></a>
 </p>
 
-</div>****
+</div>
