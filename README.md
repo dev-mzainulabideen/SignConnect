@@ -398,8 +398,6 @@ XS=4px   SM=8px   MD=16px   LG=24px   XL=32px   XXL=40px
 
 ### Planned
 
-- [ ] British Sign Language (BSL) support
-- [ ] Indian Sign Language (ISL) support
 - [ ] Cloud history sync via Firestore
 - [ ] Full offline mode for all ML models
 - [ ] Custom vocabulary training by users
