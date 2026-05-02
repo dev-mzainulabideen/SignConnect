@@ -1,17 +1,10 @@
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                    ANIMATED SVG TITLE BANNER                   -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!--          ANIMATED HEADER — works everywhere                   -->
+<!-- ══════════════════════════════════════════════════════════════ -->
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=52&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&repeat=false&width=900&height=120&lines=🤟+SignConnect" alt="SignConnect"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Nunito&weight=600&size=22&duration=4000&pause=800&color=10B981&center=true&vCenter=true&repeat=false&width=900&height=50&lines=Bridging+Sign+Language+%26+the+World+Through+AI" alt="tagline"/>
-
-<br/>
-
-<!-- Animated wave header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=8&section=header"/>
+<img src="./header.svg" width="100%" alt="SignConnect — Bridging Sign Language & the World Through AI"/>
 
 <br/>
 
@@ -67,8 +60,6 @@
   <a href="#-roadmap"><kbd>🗺️ Roadmap</kbd></a>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=8&section=footer"/>
-
 </div>
 
 <br/>
@@ -79,7 +70,9 @@
 
 ## 📌 Overview
 
-<img align="right" width="320" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=2000&pause=500&color=6366F1&multiline=true&repeat=true&width=320&height=220&lines=+SignConnect+v0.1.0;+━━━━━━━━━━━━━━━━━━;+🤟+Sign+→+Text+%2F+Voice;+🔊+Sign+→+Spoken+Audio;+✍️+Text+→+Sign+Video;+🎤+Voice+→+Sign+Video;+🔄+ASL+↔+PSL+Bridge;+━━━━━━━━━━━━━━━━━━;+⚡+15ms+·+94.2%+·+2.3MB" alt="features ticker"/>
+<table>
+<tr>
+<td>
 
 Over **70 million** deaf and hard-of-hearing people rely on sign language as their primary mode of communication — yet tools to bridge that gap with the hearing world remain deeply limited.
 
@@ -92,7 +85,28 @@ Over **70 million** deaf and hard-of-hearing people rely on sign language as the
 - 💾 **Local History** — 200-entry translation log with favorites & stats
 - 🎨 **Polished UX** — 60fps animations, Light/Dark theme, custom navigation
 
-<br clear="right"/>
+</td>
+<td width="35%" align="center">
+
+```
+┌──────────────────────────┐
+│     SignConnect v0.1     │
+│  ━━━━━━━━━━━━━━━━━━━━━━  │
+│  🤟  Sign  →  Text       │
+│  🔊  Sign  →  Voice      │
+│  ✍️  Text  →  Sign       │
+│  🎤  Voice →  Sign       │
+│  🔄  ASL   ↔  PSL        │
+│  ━━━━━━━━━━━━━━━━━━━━━━  │
+│  ⚡ 15ms · 94.2% · 2.3MB │
+└──────────────────────────┘
+```
+
+</td>
+</tr>
+</table>
+
+<br/>
 
 <!---------------------------------------------------------------------------->
 <!--  ░░░░░░░░░░░░░░░░░░░   SECTION: FEATURES   ░░░░░░░░░░░░░░░░░░░░░░░░  -->
@@ -105,15 +119,13 @@ Over **70 million** deaf and hard-of-hearing people rely on sign language as the
 <div align="center">
 
 ```
-╭──────────────────────────────────────────────────────────────────────────╮
-│                         TRANSLATION MODES                                │
-├─────────────────────┬────────────────────────────────────────────────────┤
-│  🤟  Sign → Text    │  Camera → Landmark Detection → TFLite → Text       │
-│  🔊  Sign → Voice   │  Camera → Landmark Detection → TFLite → TTS        │
-│  ✍️  Text → Sign    │  Input Text → Video Library Lookup → Playback      │
-│  🎤  Voice → Sign   │  Microphone → Speech-to-Text → Video Playback      │
-│  🔄  ASL ↔ PSL      │  Source Dialect → Translation → Target Video       │
-╰─────────────────────┴────────────────────────────────────────────────────╯
+╭──────────────────────┬──────────────────────────────────────────────────╮
+│  🤟  Sign → Text     │  Camera → Landmarks → TFLite → Text Output       │
+│  🔊  Sign → Voice    │  Camera → Landmarks → TFLite → TTS Engine        │
+│  ✍️  Text → Sign     │  Text Input → Video Library Lookup → Playback    │
+│  🎤  Voice → Sign    │  Microphone → Speech-to-Text → Video Playback    │
+│  🔄  ASL ↔ PSL       │  Source Dialect → Translate → Target Video       │
+╰──────────────────────┴──────────────────────────────────────────────────╯
 ```
 
 </div>
@@ -158,7 +170,6 @@ Over **70 million** deaf and hard-of-hearing people rely on sign language as the
 - 22 ASL + 7 PSL curated video clips bundled
 - Sequential video playback with transitions
 - Falls back to finger-spelling for unknown words
-- Tap any word to replay that segment
 
 </td>
 <td width="50%" valign="top">
@@ -179,7 +190,7 @@ Over **70 million** deaf and hard-of-hearing people rely on sign language as the
 ### 🔄 ASL ↔ PSL Cross-Dialect Translation
 > *A first-of-its-kind bidirectional bridge*
 
-Source dialect recognized via on-device model → semantically mapped → rendered in target dialect video output. Processes entirely on-device with no API calls required.
+Source dialect recognized via on-device model → semantically mapped → rendered in target dialect video. Processes entirely on-device with no API calls.
 
 </td>
 </tr>
@@ -197,27 +208,26 @@ Source dialect recognized via on-device model → semantically mapped → render
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                           S I G N C O N N E C T                         │
+│                         S I G N C O N N E C T                           │
 │                                                                         │
-│  ┌─────────────────┐   ┌──────────────────────┐   ┌─────────────────┐  │
-│  │   🔐 AUTH LAYER  │   │   📱 FEATURE SCREENS  │   │  🧠 AI/ML CORE  │  │
-│  │                 │   │                      │   │                 │  │
-│  │ Firebase Auth   │   │  ┌─ SignToText        │   │ ① Landmark      │  │
-│  │ Email/Password  │   │  ├─ SignToVoice       │   │   Detection     │  │
-│  │ Google OAuth    │   │  ├─ TextToSign  ──────┼───►      ↓         │  │
-│  │                 │   │  ├─ VoiceToSign       │   │ ② Feature       │  │
-│  │ Profile Mgmt    │   │  └─ SignToSign         │   │   Extraction    │  │
-│  │ • Name          │   │                      │   │      ↓          │  │
-│  │ • Email         │   │  ┌─ MainAppScreen     │   │ ③ TFLite        │  │
-│  │ • Password      │   │  ├─ HistoryScreen     │   │   Inference     │  │
-│  │ • Photo         │   │  └─ HandLandmarks     │   │      ↓          │  │
-│  └─────────────────┘   └──────────────────────┘   │ ④ Rule          │  │
-│                                                    │   Refinement    │  │
-│  ┌─────────────────────────────────────────────┐   │      ↓          │  │
-│  │              💾 DATA LAYER                  │   │ ✅ Letter +      │  │
-│  │  AsyncStorage · Firestore · HistoryService  │   │   Confidence    │  │
-│  │  theme · prefs · 200-entry translation log  │   └─────────────────┘  │
-│  └─────────────────────────────────────────────┘                        │
+│  ┌──────────────────┐  ┌─────────────────────────┐  ┌────────────────┐  │
+│  │  🔐  AUTH LAYER  │  │   📱  FEATURE SCREENS    │  │  🧠  AI CORE   │  │
+│  │                  │  │                         │  │                │  │
+│  │  Firebase Auth   │  │  ┌─ SignToText           │  │  ① Landmark    │  │
+│  │  Email/Password  │  │  ├─ SignToVoice          │  │    Detection   │  │
+│  │  Google OAuth    │  │  ├─ TextToSign  ─────────┼──►       ↓       │  │
+│  │                  │  │  ├─ VoiceToSign          │  │  ② Feature     │  │
+│  │  • Update Name   │  │  └─ SignToSign           │  │    Extraction  │  │
+│  │  • Update Email  │  │                         │  │       ↓        │  │
+│  │  • Change Pass   │  │  ┌─ MainAppScreen        │  │  ③ TFLite      │  │
+│  │  • Update Photo  │  │  ├─ HistoryScreen        │  │    Inference   │  │
+│  └──────────────────┘  │  └─ HandLandmarks        │  │       ↓        │  │
+│                        └─────────────────────────┘  │  ④ Rule        │  │
+│  ┌──────────────────────────────────────────────┐    │    Refinement  │  │
+│  │              💾  DATA LAYER                  │    │       ↓        │  │
+│  │  AsyncStorage · Firestore · HistoryService   │    │  ✅ Letter +   │  │
+│  │  theme · prefs · 200-entry translation log   │    │    Confidence  │  │
+│  └──────────────────────────────────────────────┘    └────────────────┘  │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -256,57 +266,53 @@ Source dialect recognized via on-device model → semantically mapped → render
 
 > A **4-stage hybrid inference pipeline** — combining neural model output with deterministic rules for maximum accuracy and sub-20ms latency.
 
-<br/>
-
 ```
-  ┌─────────────────────────────────────────────────────────┐
-  │                    📷  CAMERA FRAME                     │
-  │                  (60fps live capture)                   │
-  └──────────────────────────┬──────────────────────────────┘
-                             │
-                             ▼
-  ╔═════════════════════════════════════════════════════════╗
-  ║  STAGE 1 ·· HAND LANDMARK DETECTION                    ║
-  ║                                                        ║
-  ║  · MediaPipe-style tracking on every frame             ║
-  ║  · Extracts 21 keypoints  (x, y coordinates)           ║
-  ║  · Normalizes all coords  →  [0.0 – 1.0] range         ║
-  ╚══════════════════════════╤═════════════════════════════╝
-                             │
-                             ▼
-  ╔═════════════════════════════════════════════════════════╗
-  ║  STAGE 2 ·· FEATURE EXTRACTION                         ║
-  ║                                                        ║
-  ║  · Skeleton rendered as green lines on white bg        ║
-  ║  · Rasterized to  400 × 400  grayscale bitmap          ║
-  ║  · Exact match to training-time distribution           ║
-  ╚══════════════════════════╤═════════════════════════════╝
-                             │
-                             ▼
-  ╔═════════════════════════════════════════════════════════╗
-  ║  STAGE 3 ·· TFLITE INFERENCE                           ║
-  ║                                                        ║
-  ║  · sign_model.tflite  —  2.3 MB on-device model        ║
-  ║  · 26-class probability output  (A – Z)                ║
-  ║  · ~15ms per inference on mid-range hardware           ║
-  ╚══════════════════════════╤═════════════════════════════╝
-                             │
-                             ▼
-  ╔═════════════════════════════════════════════════════════╗
-  ║  STAGE 4 ·· RULE REFINEMENT                            ║
-  ║                                                        ║
-  ║  · Hardcoded disambiguation  (A, B, C, D, E)           ║
-  ║  · mapLandmarksToLetter()  post-processing pass        ║
-  ║  · Confidence gating  +  temporal smoothing            ║
-  ╚══════════════════════════╤═════════════════════════════╝
-                             │
-                             ▼
-  ┌─────────────────────────────────────────────────────────┐
-  │       ✅  Classified Letter  +  Confidence Score        │
-  └─────────────────────────────────────────────────────────┘
+  ┌──────────────────────────────────────────────────────────┐
+  │                   📷  CAMERA FRAME                       │
+  │                 (60fps live capture)                     │
+  └─────────────────────────┬────────────────────────────────┘
+                            │
+                            ▼
+  ╔══════════════════════════════════════════════════════════╗
+  ║  STAGE 1 ·· HAND LANDMARK DETECTION                     ║
+  ║                                                         ║
+  ║  · MediaPipe-style tracking on every frame              ║
+  ║  · Extracts 21 keypoints  (x, y coordinates)            ║
+  ║  · Normalizes all coords  →  [0.0 – 1.0] range          ║
+  ╚═════════════════════════╤═══════════════════════════════╝
+                            │
+                            ▼
+  ╔══════════════════════════════════════════════════════════╗
+  ║  STAGE 2 ·· FEATURE EXTRACTION                          ║
+  ║                                                         ║
+  ║  · Skeleton drawn as green lines on white background    ║
+  ║  · Rasterized to  400 × 400  grayscale bitmap           ║
+  ║  · Exact match to training-time data distribution       ║
+  ╚═════════════════════════╤═══════════════════════════════╝
+                            │
+                            ▼
+  ╔══════════════════════════════════════════════════════════╗
+  ║  STAGE 3 ·· TFLITE INFERENCE                            ║
+  ║                                                         ║
+  ║  · sign_model.tflite  —  2.3 MB on-device model         ║
+  ║  · 26-class probability output  (A – Z)                 ║
+  ║  · ~15ms per inference on mid-range hardware            ║
+  ╚═════════════════════════╤═══════════════════════════════╝
+                            │
+                            ▼
+  ╔══════════════════════════════════════════════════════════╗
+  ║  STAGE 4 ·· RULE REFINEMENT                             ║
+  ║                                                         ║
+  ║  · Hardcoded disambiguation  (A, B, C, D, E)            ║
+  ║  · mapLandmarksToLetter()  post-processing pass         ║
+  ║  · Confidence gating  +  temporal smoothing             ║
+  ╚═════════════════════════╤═══════════════════════════════╝
+                            │
+                            ▼
+  ┌──────────────────────────────────────────────────────────┐
+  │        ✅  Classified Letter  +  Confidence Score        │
+  └──────────────────────────────────────────────────────────┘
 ```
-
-<br/>
 
 <div align="center">
 
@@ -362,7 +368,6 @@ SignConnect/
 │   ├── 📂  components/
 │   │   ├── AppBottomNav.tsx             ← Custom animated tab bar
 │   │   ├── HandLandmarkRenderer.tsx
-│   │   ├── HandLandmarkVisualizer.tsx
 │   │   ├── ASL/                         ← A–Z + 0–10 static images
 │   │   ├── ASL-Words/                   ← 22 ASL vocabulary videos
 │   │   └── PSL-Words/                   ← 7 PSL vocabulary videos
@@ -385,10 +390,9 @@ SignConnect/
 │   ├── 📂  theme/
 │   │   └── ThemeContext.tsx             ← Light / Dark mode provider
 │   │
-│   ├── 📂  types/                       ← TypeScript interfaces
+│   ├── 📂  types/
 │   │   ├── auth.ts · HandTypes.ts · ModelTypes.ts · WordTypes.ts
 │   │
-│   ├── 📂  data/                        ← Static JSON datasets
 │   └── 📂  assets/
 │       └── models/
 │           ├── sign_model.tflite        ← 2.3 MB TFLite model
@@ -397,11 +401,9 @@ SignConnect/
 │
 ├── 📂  android/                         ← Gradle + Firebase config
 ├── 📂  ios/                             ← CocoaPods + Xcode project
-│
 └── 📂  ASL/                             ← Python ML training pipeline
     ├── train_model.py
     ├── extract_keypoints.py
-    ├── realtime_prediction.py
     ├── sign_model.h5                    ← Keras source model
     └── keypoints_data/                  ← 35 .npy training files
 ```
@@ -427,64 +429,51 @@ SignConnect/
 | **Node.js** | `18+` | LTS recommended |
 | **React Native CLI** | latest | `npm i -g react-native-cli` |
 | **Android Studio** | Hedgehog+ | For Android builds |
-| **Xcode** | `15+` | macOS only, for iOS builds |
-| **JDK** | `17` | Required for Gradle |
+| **Xcode** | `15+` | macOS only — for iOS builds |
+| **JDK** | `17` | Required by Gradle |
 | **CocoaPods** | `1.12+` | iOS dependency manager |
 
 </div>
 
 <br/>
 
-### ⚡ Quick Setup
+### ⚡ Setup
 
 ```bash
-# ── Step 1 ──────────────────────────────────────────────────
-# Clone the repository
+# ── 1. Clone ────────────────────────────────────────────────────
 git clone https://github.com/your-username/signconnect.git
 cd signconnect
 
-# ── Step 2 ──────────────────────────────────────────────────
-# Install JavaScript dependencies
+# ── 2. Install dependencies ─────────────────────────────────────
 npm install
 
-# ── Step 3  (iOS only) ──────────────────────────────────────
-# Install CocoaPods
+# ── 3. iOS pods (macOS only) ────────────────────────────────────
 cd ios && pod install && cd ..
 
-# ── Step 4 ──────────────────────────────────────────────────
-# Add Firebase config files:
+# ── 4. Firebase config ──────────────────────────────────────────
 #   Android → android/app/google-services.json
 #   iOS     → ios/MyFirstReactNativeApp/GoogleService-Info.plist
 ```
 
-> 📖 Full Firebase setup: [GOOGLE_SIGNIN_SETUP.md](docs/GOOGLE_SIGNIN_SETUP.md)
+> 📖 Full setup guide: [GOOGLE_SIGNIN_SETUP.md](docs/GOOGLE_SIGNIN_SETUP.md)
 
-<br/>
-
-### ▶️ Run the App
+### ▶️ Run
 
 ```bash
-# Terminal 1 — Start Metro bundler
-npm start
-
-# Terminal 2 — Launch on device/emulator
-npm run android   # Android
-npm run ios       # iOS
-npm test          # Run test suite
+npm start           # Terminal 1 — Metro bundler
+npm run android     # Terminal 2 — Android
+npm run ios         # Terminal 2 — iOS
+npm test            # Run test suite
 ```
-
-<br/>
 
 ### 📦 Production Build
 
 ```bash
-# ── Android ─────────────────────────────────────────────────
-cd android
-./gradlew assembleRelease
-# Output → android/app/build/outputs/apk/release/app-release.apk
+# Android APK
+cd android && ./gradlew assembleRelease
+# → android/app/build/outputs/apk/release/app-release.apk
 
-# ── iOS ─────────────────────────────────────────────────────
-# Xcode → Product → Archive → Distribute App
+# iOS — Xcode → Product → Archive → Distribute App
 ```
 
 > 📖 Full build guide: [RELEASE_APK_GUIDE.md](docs/RELEASE_APK_GUIDE.md)
@@ -506,18 +495,16 @@ cd android
    │
    └──► Google Sign-In ───► OAuth 2.0 ──────► ID Token  ──► Firebase Auth
                                                                │
-                                                  ┌────────────▼────────────┐
-                                                  │    Profile Management   │
-                                                  │  name · email · photo   │
-                                                  │  password · delete acct │
-                                                  └─────────────────────────┘
+                                                  ┌────────────▼───────────┐
+                                                  │   Profile Management   │
+                                                  │ name · email · photo   │
+                                                  │ password · delete acct │
+                                                  └────────────────────────┘
 ```
-
-**Hardened security features:**
 
 - 🔑 Password policy — 8+ chars, uppercase, lowercase, digit, symbol
 - 🔁 Re-authentication enforced before email or password changes
-- 🔒 JWT tokens stored securely — no plaintext credentials anywhere
+- 🔒 JWT tokens stored securely — no plaintext credentials
 - ♻️ Auto-refresh sessions via Firebase SDK token rotation
 
 <br/>
@@ -539,18 +526,10 @@ interface HistoryEntry {
   mode:     'sign_to_text' | 'text_to_sign' | 'voice_to_sign' | 'sign_to_voice';
   language: 'ASL' | 'PSL';
 
-  input: {
-    type:  'text' | 'voice' | 'video' | 'image';
-    value: string;
-    uri?:  string;
-  };
-  output: {
-    type:  'text' | 'video';
-    value: string;
-    uri?:  any;
-  };
+  input:  { type: 'text' | 'voice' | 'video' | 'image'; value: string; uri?: string; };
+  output: { type: 'text' | 'video'; value: string; uri?: any; };
 
-  confidence?: number;   // 0.0 – 1.0 model confidence score
+  confidence?: number;   // 0.0 – 1.0
   favorite:    boolean;
 }
 ```
@@ -559,12 +538,12 @@ interface HistoryEntry {
 
 | Operation | Description |
 |:---|:---|
-| `getAll(userId)` | Retrieve all history entries for user |
+| `getAll(userId)` | Retrieve all entries for a user |
 | `add(userId, entry)` | Append a new translation entry |
 | `deleteOne(userId, id)` | Remove a specific entry |
 | `clearAll(userId)` | Wipe the full history |
 | `toggleFavorite(userId, id)` | Star / unstar an entry |
-| `getStats(userId)` | Total · Favorites · Breakdown by mode |
+| `getStats(userId)` | Total · Favorites · By mode |
 
 </div>
 
@@ -584,7 +563,7 @@ interface HistoryEntry {
 
 ### Color Palette
 
-| Token | Light Mode | Dark Mode | Hex |
+| Token | Light | Dark | Hex |
 |:---|:---|:---|:---:|
 | `primary` | Indigo | Indigo | `#6366F1` |
 | `accent` | Emerald | Emerald | `#10B981` |
@@ -592,8 +571,6 @@ interface HistoryEntry {
 | `surface` | White | Graphite | `#FFFFFF` / `#111827` |
 | `text-primary` | Slate | Mist | `#1E293B` / `#E5E7EB` |
 | `text-secondary` | Dusk | Fog | `#64748B` / `#9CA3AF` |
-| `gradient-start` | — | — | `#667eea` |
-| `gradient-end` | — | — | `#764ba2` |
 
 ### Spacing Scale
 
@@ -604,20 +581,20 @@ interface HistoryEntry {
  ╰──────┴──────┴──────┴──────┴──────┴──────╯
 ```
 
-### Typography Scale
+### Typography
 
-| Role | Size | Weight | Usage |
-|:---|:---:|:---:|:---|
-| Display H1 | `28px` | `800` | Screen titles |
-| Title H2 | `22px` | `700` | Section headers |
-| Subtitle H3 | `18px` | `600` | Card headers |
-| Body | `16px` | `500` | Paragraph text |
-| Button | `16px` | `600` | CTAs |
-| Caption | `12px` | `500` | Labels, metadata |
+| Role | Size | Weight |
+|:---|:---:|:---:|
+| Display H1 | `28px` | `800` |
+| Title H2 | `22px` | `700` |
+| Subtitle H3 | `18px` | `600` |
+| Body | `16px` | `500` |
+| Button | `16px` | `600` |
+| Caption | `12px` | `500` |
 
 </div>
 
-> All animations use `react-native-reanimated` with the **native driver** — consistent **60fps** on both Android and iOS.
+> All animations use `react-native-reanimated` with the **native driver** — consistent **60fps** on both platforms.
 
 <br/>
 
@@ -632,7 +609,7 @@ interface HistoryEntry {
 ```bash
 npm test                        # Full test suite
 npm test -- --coverage          # With coverage report
-npm test -- --watchAll=false    # CI / non-interactive mode
+npm test -- --watchAll=false    # CI mode
 ```
 
 <div align="center">
@@ -641,9 +618,9 @@ npm test -- --watchAll=false    # CI / non-interactive mode
 |:---|:---|
 | `App.test.tsx` | Root navigation & routing |
 | `LoginScreen.test.tsx` | Auth flows — login, signup, reset |
-| `HistoryService.test.ts` | CRUD operations & stats |
+| `HistoryService.test.ts` | CRUD operations & statistics |
 | `SpellCheckService.test.ts` | Text correction pipeline |
-| `ThemeService.test.ts` | Theme persistence & context switching |
+| `ThemeService.test.ts` | Theme persistence & context |
 
 </div>
 
@@ -660,11 +637,11 @@ npm test -- --watchAll=false    # CI / non-interactive mode
 ## 🗺️ Roadmap
 
 ```
-  v0.1  ████████████████████████  ✅  Current Release
-  v0.2  ████████░░░░░░░░░░░░░░░░  🔲  Sentence Recognition + Multi-hand
-  v0.3  ████░░░░░░░░░░░░░░░░░░░░  🔲  BSL / ISL / AUSLAN Languages
-  v0.4  ██░░░░░░░░░░░░░░░░░░░░░░  🔲  Cloud Sync + Offline Full Support
-  v1.0  ░░░░░░░░░░░░░░░░░░░░░░░░  🔲  Community Features + 96%+ Accuracy
+  v0.1  ████████████████████  ✅  Current Release
+  v0.2  █████████░░░░░░░░░░░  🔲  Sentence Recognition + Multi-hand
+  v0.3  ████░░░░░░░░░░░░░░░░  🔲  BSL / ISL / AUSLAN Support
+  v0.4  ██░░░░░░░░░░░░░░░░░░  🔲  Cloud Sync + Full Offline
+  v1.0  ░░░░░░░░░░░░░░░░░░░░  🔲  Community Features + 96%+ Accuracy
 ```
 
 <div align="center">
@@ -679,7 +656,6 @@ npm test -- --watchAll=false    # CI / non-interactive mode
 | 🟡 | Community vocabulary contributions | v1.0 |
 | 🟡 | Push model accuracy beyond 96% | v1.0 |
 | 🟡 | CI/CD pipeline + crash analytics | v1.0 |
-| 🟡 | WCAG 2.1 AA full accessibility audit | v1.0 |
 
 </div>
 
@@ -695,13 +671,13 @@ npm test -- --watchAll=false    # CI / non-interactive mode
 
 <div align="center">
 
-| 📄 Document | Description |
+| Document | Description |
 |:---|:---|
 | [`SIGN_TO_TEXT_README.md`](docs/SIGN_TO_TEXT_README.md) | Feature deep-dive — Sign → Text |
 | [`SIGN_TO_VOICE_README.md`](docs/SIGN_TO_VOICE_README.md) | Feature deep-dive — Sign → Voice |
 | [`PROFILE_SCREEN_DOCUMENTATION.md`](docs/PROFILE_SCREEN_DOCUMENTATION.md) | Profile & settings reference |
-| [`GOOGLE_SIGNIN_SETUP.md`](docs/GOOGLE_SIGNIN_SETUP.md) | Firebase + Google OAuth setup guide |
-| [`RELEASE_APK_GUIDE.md`](docs/RELEASE_APK_GUIDE.md) | Android release build walkthrough |
+| [`GOOGLE_SIGNIN_SETUP.md`](docs/GOOGLE_SIGNIN_SETUP.md) | Firebase + Google OAuth setup |
+| [`RELEASE_APK_GUIDE.md`](docs/RELEASE_APK_GUIDE.md) | Android release build guide |
 | [`THEME_IMPLEMENTATION_STATUS.md`](docs/THEME_IMPLEMENTATION_STATUS.md) | Theming system notes |
 
 </div>
@@ -716,44 +692,30 @@ npm test -- --watchAll=false    # CI / non-interactive mode
 
 ## 🤝 Contributing
 
-All contributions are welcome — bug reports, feature requests, and pull requests!
-
 ```bash
-# 1. Fork and clone
 git clone https://github.com/your-username/signconnect.git
-
-# 2. Create your feature branch
-git checkout -b feat/your-feature-name
-
-# 3. Commit with Conventional Commits
-git commit -m "feat: add sentence-level recognition"
-
-# 4. Push and open a Pull Request
-git push origin feat/your-feature-name
+git checkout -b feat/your-feature
+git commit -m "feat: add your feature"
+git push origin feat/your-feature
+# → Open a Pull Request
 ```
 
 <div align="center">
-
-### Commit Convention
 
 | Prefix | Use For |
 |:---|:---|
 | `feat:` | New feature |
 | `fix:` | Bug fix |
-| `docs:` | Documentation only |
-| `refactor:` | Code restructure (no behavior change) |
-| `test:` | Adding or updating tests |
-| `chore:` | Build process or tooling |
+| `docs:` | Documentation |
+| `refactor:` | Code restructure |
+| `test:` | Tests |
+| `chore:` | Tooling / build |
 
 </div>
 
-> Please open an **Issue** first for major changes so we can align on the approach before you invest time building it.
+> Please open an **Issue** first for major changes before investing build time.
 
 <br/>
-
-<!---------------------------------------------------------------------------->
-<!--  ░░░░░░░░░░░░░░░░░░░░░   SECTION: LICENSE   ░░░░░░░░░░░░░░░░░░░░░░  -->
-<!---------------------------------------------------------------------------->
 
 ---
 
@@ -767,15 +729,9 @@ Distributed under the **MIT License** — see [`LICENSE`](LICENSE) for full term
 <!--  ░░░░░░░░░░░░░░░░░░░░░░░░   FOOTER   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  -->
 <!---------------------------------------------------------------------------->
 
----
-
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Nunito&weight=700&size=18&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&repeat=true&width=600&height=40&lines=Made+with+🤟+by+Zain;Built+for+70+million%2B+sign+language+users;Communication+is+a+human+right+💜" alt="footer typing"/>
-
-<br/>
+<img src="./footer.svg" width="100%" alt="SignConnect footer"/>
 
 <p>
   <a href="https://reactnative.dev/"><img src="https://img.shields.io/badge/-React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB"/></a>
@@ -789,8 +745,4 @@ Distributed under the **MIT License** — see [`LICENSE`](LICENSE) for full term
   <a href="https://github.com/your-username/signconnect/stargazers"><img src="https://img.shields.io/badge/⭐_Star_this_repo-6366F1?style=flat-square"/></a>
 </p>
 
-<br/>
-
-<sub>© 2025 SignConnect · MIT License · Made in 🇵🇰 Pakistan</sub>
-
-</div>
+</div>****
