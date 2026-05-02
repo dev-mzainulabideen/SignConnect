@@ -1,0 +1,18 @@
+# Ignore third-party and build outputs
+node_modules/
+**/node_modules/**
+android/
+ios/
+build/
+dist/
+
+# Ignore React Native bundle/artifacts
+*.bundle.js
+*.bundle.map
+
+# Ignore metro cache
+.expo/
+.expo-shared/
+
+# Generated files
+*.min.js

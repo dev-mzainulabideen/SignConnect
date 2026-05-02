@@ -1,0 +1,148 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+**/.xcode.env.local
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+keystore.properties
+.kotlin/
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifact
+*.jsbundle
+
+# Ruby / CocoaPods
+**/Pods/
+/vendor/bundle/
+
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
+
+# testing
+/coverage
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# React Native bundle output
+*.jsbundle
+.bundle/
+
+Sign-Language-To-Text-and-Speech-Conversion-master/.venv311/
+Sign-Language-To-Text-and-Speech-Conversion-master/__pycache__/
+Sign-Language-To-Text-and-Speech-Conversion-master/*.pyc
+Sign-Language-To-Text-and-Speech-Conversion-master/.venv/
+Sign-Language-To-Text-and-Speech-Conversion-master/venv/
+Sign-Language-To-Text-and-Speech-Conversion-master/env/
+Sign-Language-To-Text-and-Speech-Conversion-master/*.egg-info/
+Sign-Language-To-Text-and-Speech-Conversion-master/dist/
+Sign-Language-To-Text-and-Speech-Conversion-master/build/
+
+# Machine Learning / Data Science
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.tflite
+*.pb
+*.tflite
+metadata.json
+label_map.json
+labels.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Android
+*.keystore
+debug.keystore
+keystore.properties
+.keystore.properties
+key.properties
+
+# iOS
+*.xcconfig
+*.xcuserstate
+*.ipa
+*.xcarchive
+*.xcodearchives
+
+# Ruby
+Gemfile.lock
+/.bundle/
+vendor/bundle/
+
+# Temp
+*.tmp
+*.temp

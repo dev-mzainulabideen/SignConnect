@@ -1,0 +1,47 @@
+{
+  "dictionary_language": "en_US",
+  "suggestion_algorithm": "levenshtein_distance",
+  "max_suggestions": 4,
+  "min_word_length": 2,
+  "max_word_length": 50,
+  "confidence_thresholds": {
+    "exact_match": 1.0,
+    "high_confidence": 0.8,
+    "medium_confidence": 0.6,
+    "low_confidence": 0.4
+  },
+  "word_frequency": {
+    "common_words": 1000,
+    "professional_terms": 500,
+    "business_communication": 300,
+    "technology_terms": 200,
+    "education_terms": 150,
+    "medical_terms": 100,
+    "sign_language_terms": 200,
+    "alphabet": 50,
+    "numbers": 30,
+    "emotions_and_feelings": 80,
+    "actions_and_verbs": 120,
+    "places_and_locations": 100,
+    "time_and_dates": 60,
+    "colors_and_descriptions": 40,
+    "food_and_drinks": 70,
+    "family_and_relationships": 60,
+    "special_characters": 20
+  },
+  "context_aware_suggestions": {
+    "enabled": true,
+    "sentence_context": true,
+    "previous_words": 3,
+    "next_words": 1,
+    "grammar_rules": true,
+    "part_of_speech": true
+  },
+  "learning_features": {
+    "user_corrections": true,
+    "frequent_words": true,
+    "custom_dictionary": true,
+    "domain_specific": true,
+    "adaptive_suggestions": true
+  }
+}

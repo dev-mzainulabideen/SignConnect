@@ -1,0 +1,66 @@
+{
+  "model_name": "Sign Language Recognition",
+  "version": "1.0.0",
+  "input_shape": [
+    1,
+    400,
+    400,
+    3
+  ],
+  "output_classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "space",
+    "del",
+    "nothing"
+  ],
+  "confidence_threshold": 0.7,
+  "preprocessing": {
+    "normalize": true,
+    "scale_factor": 400,
+    "input_range": [
+      0,
+      255
+    ],
+    "resize_to": [
+      400,
+      400
+    ],
+    "convert_to_rgb": true
+  },
+  "postprocessing": {
+    "apply_softmax": true,
+    "top_k": 4
+  },
+  "model_info": {
+    "architecture": "CNN",
+    "input_type": "image",
+    "output_type": "character_classification",
+    "training_data": "Sign Language Dataset",
+    "accuracy": "95%+"
+  }
+}
